@@ -1,38 +1,93 @@
 .App {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+ color: black;
+ background-color: #77edef;
+ font-size: 3rem;
+ min-width: 30%;
+ margin-bottom: 3rem;
+ border-radius: 100px;
+ padding: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-size: 2rem;;
+  color: inherit;
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid #77edef;
+  outline: none;
+  min-width: 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::placeholder {
+  text-align: center;
+  color: #1f5c69;
+}
+
+button {
+  font-size: 1.5rem;
+  color: #77edef;
+  text-align: center;
+  border: 0.15rem solid #77edef;
+  border-radius: 50px;
+  background: none;
+  background-color: none;
+  background-image: none;
+  outline: none;
+  min-width: 30%;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  margin: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover {
+  color: black;
+  background-color: #77edef;
+}
+
+hr {
+  min-width: 50%;
+  background-color: #77edef;
+  border: 0.15rem solid #77edef;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  min-width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0.15rem solid #77edef;
+  border-radius: 50px;
+  margin: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li:hover {
+  background-color: #77edef;
+  border: 0.15rem solid #77edef;
+  color: black;
+}
+
+.completed {
+  background-color: #77edef;
+  color: black;
 }
