@@ -17,6 +17,9 @@ class App extends Component {
   }
 
   addTodo = () => {
+    if (this.state.userInput.trim() === '') {
+      return
+    }
     const newTodo = {
       id: Math.random(),
       name: this.state.userInput,
